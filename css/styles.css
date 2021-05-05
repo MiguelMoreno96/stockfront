@@ -3,6 +3,7 @@
 }
 body{
     background: rgb(238, 238, 233);
+    margin-left: auto;
 }
 .nav{
     margin: -1;
@@ -26,8 +27,8 @@ a{
     float: left;
     background: white;
     margin: 10px;
-    left: 17%;
-    width: 43%;
+    left: 15%;
+    width: 31%;
     border-radius:8px;
     max-width: 54%;
     box-shadow: 5px 10px 5px #aaaaaa;
@@ -35,6 +36,17 @@ a{
 }
 .search-sheller{
     position: relative;
+    background: white;
+    float: left;
+    margin: 10px;
+    left: 15%;
+    border-radius:8px;
+    max-width: 24%;
+    box-shadow: 5px 10px 5px #aaaaaa;
+    animation: float 5s infinite;
+}
+.search-sku{
+  position: relative;
     background: white;
     float: left;
     margin: 10px;
@@ -52,7 +64,7 @@ a{
     float: left;
     left: 15%;
     border-radius:8px;
-    max-width: 41%;
+    max-width: 30%;
     width: 100%;
     box-shadow: 5px 10px 5px #aaaaaa;
     animation: float 5s infinite;
@@ -340,3 +352,26 @@ a{
   header#mainHeader nav:hover li:nth-child(8) a {
     transition-delay: 0.58s;
   }
+
+  @media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
+@media screen and (max-width: 480px){
+  #encabezado{
+      height: auto;
+  }
+  #contenido{
+      width: auto;
+  }
+  #barra_lateral{
+      display:none;
+  }
+}
